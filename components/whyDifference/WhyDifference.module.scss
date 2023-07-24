@@ -1,0 +1,22 @@
+.span__border{
+    @apply absolute bottom-0  border w-[150px]  border-blue-700  border-spacing-3
+}
+
+
+ .sticky {
+    position: sticky;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+  transition:all 0.7s ease-in;
+ 
+  
+  }
+
+  .text{
+    color: rgb(13, 13, 207);
+ 
+  }
+  

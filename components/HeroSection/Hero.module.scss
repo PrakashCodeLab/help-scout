@@ -1,0 +1,53 @@
+
+
+.bg__patttren {
+    background-color: #ffff;
+    opacity: 0.2;
+    background-image: linear-gradient(135deg, rgba(52, 21, 226, 0.3) 25%, transparent 25%), linear-gradient(225deg, rgba(62, 9, 205, 0.3) 25%, transparent 25%), linear-gradient(45deg, rgba(63, 8, 215, 0.3) 25%, transparent 25%), linear-gradient(315deg, rgba(76, 28, 208, 0.3) 25%, rgba(94, 44, 219, 0.3) 25%);
+    background-position: 4px 0, 4px 0, 0 0, 0 0;
+    background-size:3px 3px;
+    background-repeat: repeat;
+    width: 100%;
+    height: calc(100vh);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    
+}
+
+
+.btn__hero__blue{
+    @apply bg-blue-500 text-white w-[200px] h-[50px] flex justify-center items-center capitalize font-medium rounded-md  
+}
+
+
+.btn__hero__white{
+    @apply bg-white text-gray-700 shadow-md w-[200px] h-[50px] flex justify-center items-center capitalize font-medium rounded-md  
+}
+
+
+.hero__left__btn{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.6rem;
+}
+
+.hero__section__left{
+   
+    padding: 1rem;
+    display: flex;
+  
+    .hero__left__content{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+         
+        width: 500px;
+      
+        flex:1;
+        margin-top: 2rem;
+    }
+}

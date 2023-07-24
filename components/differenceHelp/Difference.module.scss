@@ -1,0 +1,50 @@
+/* styles.module.css */
+.img__section {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .img__bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    flex: 1;
+  }
+  
+  .img__top {
+    position: absolute;
+    width: 100%;
+    flex: 1;
+    top: 12px;
+    left: 20px; 
+    transform: translateZ(100px);
+    left: 0;
+    cursor: pointer; /* Add cursor pointer on hover to indicate interactivity */
+  }
+  
+  .img__section:hover .img__top{
+    animation: rotate 2.5s linear infinite;
+    transform-origin: center;
+    transition: transform  2.5s linear ;
+  }
+  
+
+  /* styles.css */
+@keyframes rotate {
+    0% {
+      transform: rotatez(18deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotatez(-18deg);
+    }
+  }
+  

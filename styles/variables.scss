@@ -1,0 +1,17 @@
+$small-screen: 768px;
+$medium-screen: 1024px;
+$large-screen: 1440px;
+
+// Mixin for min-width media query
+@mixin min-width($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+// Mixin for max-width media query
+@mixin max-width($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}

@@ -1,0 +1,139 @@
+@import '@/styles/variables.scss';
+
+
+.bg__gradient{
+    position: absolute;
+    width: 100%;
+    max-width: 800px;
+   outline: 2px dashed skyblue;
+   outline-offset: 4rem;
+   border-radius: 70% 70% 0 0;
+   shape-outside: border-box;
+
+    height: 400px;
+    bottom: 0;
+    left: 0;
+    
+    z-index: -1;
+    background-image: radial-gradient(circle at 50% 50%, #87CEFA, #B0E2FF, #E1F3FF);
+    background: conic-gradient(
+      lightblue 0% 180deg,
+      #a0c9f0 120deg 180deg,
+      #d4e5f7 240deg 360deg,
+      #f7fbff 0% 0%
+    );
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.clock__container__styling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .clock__group__one , .clock__group__two{
+    position: relative;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+   
+  
+    
+  }
+  
+
+  /* Add similar styles for the other groups */
+
+  .clock__segment__one , .clock__segment__two , .clock__segment__three, .clock__segment__four {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 50%;
+
+   
+  
+   
+  }
+
+  .clock__segment__six , .clock__segment__seven , .clock__segment__eight , .clock__segment__nine {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+  }
+
+  .clock__segment__six{
+
+    z-index: 50;
+    transform:translatex(-130px) translateY(100px);
+
+   
+}
+
+.clock__segment__seven {
+  transform:translatex(-80px)  translateY(-30px);
+ 
+}
+
+.clock__segment__eight {
+  transform:translatex(60px)  translateY(-30px);
+
+ 
+}
+
+.clock__segment__nine {
+  transform:translatex(130px)  translateY(100px);
+  
+}
+
+
+  
+  .clock__segment__one {
+      transform:translate(-350px);
+      background-color:#e472cf ;
+      @include max-width($medium-screen - 1px) {
+        transform: translateX(-100px) translateY(-600px) ;
+    }
+  }
+ 
+  .clock__segment__two {
+    transform:translatex(-200px)  translateY(-400px);
+    background-color:#EBD2B4 ;
+    @include max-width($medium-screen - 1px) {
+      transform: translateX(90px) translateY(-600px) ;
+  }
+}
+
+.clock__segment__three {
+    transform:translatex(200px)  translateY(-400px);
+    background-color: #F4989C;
+    z-index:40;
+    @include max-width($medium-screen - 1px) {
+      transform: translateX(90px) translateY(-450px) ;
+  }
+}
+
+.clock__segment__four {
+    transform:translatex(350px)  translateY(0);
+    background-color:#ade2a1;
+    @include max-width($medium-screen - 1px) {
+      transform: translateX(-90px) translateY(-450px) ;
+  }
+}
+
+.clock__segment__five {
+  transform:translatex(0)  translateY(0);
+  bottom: 0;
+  display: flex; 
+  align-items: flex-end;
+  justify-content:flex-end;
+  flex-direction: column;
+}
+  
+  
+ 
